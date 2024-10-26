@@ -1,0 +1,83 @@
+/* General styles */
+body {
+    background-color: #ffe4e1; /* Light pink background */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+form {
+    background-color: #fff0f5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Headings */
+h2 {
+    font-size: 24px;
+    color: #ff69b4; /* Hot pink color */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #ff1493; /* Deep pink color */
+    margin-bottom: 20px;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Button styles */
+input[type="submit"] {
+    background-color: #ff69b4; /* Hot pink background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-color: #ff1493; /* Deep pink background on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Specific button styles */
+#yes {
+    box-shadow: 0 0 10px #32cd32; /* Green glow */
+}
+
+#no {
+    box-shadow: 0 0 10px #ff4500; /* Red glow */
+}
+
+/* Animation for the form */
+form {
+    animation: popIn 1s ease forwards;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
